@@ -1,5 +1,5 @@
 {
-    "name": "Rocky's App",
+    "name": "Propulsion",
     "version": "1.0.0",
     "description": "Motivational Theme!",
     "permissions": ["storage",
@@ -12,9 +12,15 @@
         "newtab":"newpage.html"
     },
 
-    "icons": {"128": "images/barrel_128.png"},
+    "icons": 
+        {
+            "16": "images/propulsion_16.png",
+            "48": "images/propulsion_48.png",
+            "128": "images/propulsion_128.png"
+
+        },
     "browser_action":{
-        "default_icon":"images/barrel.png",
+        "default_icon":"images/propulsion_128.png",
         "default_popup":"popup.html"
     },
 

@@ -42,10 +42,12 @@ body, html{
     color:white;
     box-shadow: 5px 8px #000000;
     border-radius: 2em;
+    transition: opacity 2.5s ease-in-out;
 }
 
 #quoteBox:hover{
-    box-shadow: 5px 8px #FFF;
+    
+    box-shadow: 5px 8px rgb(219, 161, 161);
 }
 
 #qotd{
