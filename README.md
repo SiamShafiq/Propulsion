@@ -19,3 +19,5 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 - Weather widgets
 - Time management
 - To-do list
+
+### This is a submission for the SFU Surge Hackathon hosted on 20th February 2021.
