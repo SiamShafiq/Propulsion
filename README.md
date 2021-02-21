@@ -20,4 +20,13 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 - Time management
 - To-do list
 
+### How to install:
+1. Clone this repo to a folder on your computer
+2. On Chrome or Brave, go to the extensions settings.
+3. On the top right corner, enable Developer Settings
+4. Once enable, on the top left, click on load-unpacked
+5. Select the cloned folder on your computer
+6. You have now successfully install Propulsion!
+7. Once installed, you can personalize the app with the settings button in the bottom right corner of the new-tab page.
+
 ### This is a submission for the SFU Surge Hackathon hosted on 20th February 2021.
