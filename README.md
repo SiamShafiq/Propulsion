@@ -32,4 +32,4 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 6. You have now successfully install Propulsion!
 7. Once installed, you can personalize the app with the settings button in the bottom right corner of the new-tab page.
 
-### This is a submission for the SFU Surge Hackathon hosted on 20th February 2021.
+### This is a submission for the SFU StormHacks Hackathon hosted on 20th/21st February 2021.
