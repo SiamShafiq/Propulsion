@@ -3,7 +3,7 @@
 
 ## The extension to kickstart your day.
 
-Revamp your new-tab page with this chrome extension that features a beautiful backdrop and a motivational quote to start your day off right.
+Revamp your new-tab page with this chrome extension that features a beautiful backdrop and a motivational quote to start your day off right. Long enough has [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=en) sat on the throne for your go-to motivational new-tab-page.
 
 ![screenshotPropulsion](https://user-images.githubusercontent.com/10060614/108626904-71eeca80-7407-11eb-8984-09a92550892e.PNG)
 
