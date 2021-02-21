@@ -1,4 +1,5 @@
-# Propulsion ![propulsion_48](https://user-images.githubusercontent.com/10060614/108627522-e5460b80-740a-11eb-9c26-f592f4c0bc88.png)
+# Propulsion ![Propulsion_Logo (4)-48_x_48](https://user-images.githubusercontent.com/10060614/108627980-17f10380-740d-11eb-92ac-ec97efe9b151.png)
+
 
 ## The extension to kickstart your day.
 
