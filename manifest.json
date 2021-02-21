@@ -1,0 +1,31 @@
+{
+    "name": "Rocky's App",
+    "version": "1.0.0",
+    "description": "Motivational Theme!",
+    "permissions": ["storage",
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ],
+    "chrome_url_overrides":{
+        "newtab":"newpage.html"
+    },
+
+    "icons": {"128": "images/barrel_128.png"},
+    "browser_action":{
+        "default_icon":"images/barrel.png",
+        "default_popup":"popup.html"
+    },
+
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": false
+      },
+
+      "content_security_policy": "script-src 'self' https://backend.deviantart.com; object-src 'self'",
+      
+
+
+    "manifest_version": 2
+  }

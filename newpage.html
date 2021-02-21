@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>New Home Page</title>
+</head>
+<body>
+    <div class = "bg animate__animated animate__fadeIn"></div>
+        <div id = "quoteBox">
+            <div id = "quote">
+                <h1 id = "clock"></h1>
+                <h2 id = "welcome_message"> Good Afternoon, Rocky</h2>
+                <h2 id = "qotd" class="animate__animated animate__fadeInLeft"></h1>
+                <h2 id = "author"></h2>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Personalize your experience.</p>
+                <span class= "labels">Name:</span> <input type="text" id="fname" name="fname">
+                <br>
+                <span class= "labels">Your Favorite Color:</span>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </div>
+        </div>
+        
+        <button id = "myBtn"></button>
+        <div>
+    </div>
+    
+</body>
+
+    <script src="./jquery.min.js"></script>
+    <script type="module" src="backgroundScript.js"></script>
+</html>
