@@ -21,6 +21,8 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 - Time management
 - To-do list
 
+#### Technologies Used: HTML, CSS, Javascript, Jquery, Pexels API, Quotes API
+
 ### How to install:
 1. Clone this repo to a folder on your computer
 2. On Chrome or Brave, go to the extensions settings.
