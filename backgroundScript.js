@@ -5,13 +5,6 @@ function getQuote(url) {
         dataType: "json"
     }).done(function(data){    
         console.log(data);
-        // console.log(data["contents"]["quotes"][0]["quote"]);
-
-        // $("#qotd").text(data["quote"]["body"]);
-        // $("#author").text("-" + data["quote"]["author"]);
-
-        // $("#qotd").text(data["contents"]["quotes"][0]["quote"]);
-        // $("#author").text("-" + data["contents"]["quotes"][0]["author"]);
 
         $("#qotd").text(data["quotes"]["0"]["text"]);
         $("#author").text("-" + data["quotes"]["0"]["author"]);
@@ -47,92 +40,8 @@ function setWelcomeMessage(){
 
 setWelcomeMessage();
 
-// function getLocation() {
-//     if (navigator.geolocation && localStorage.getItem("geolat") == null) {
-//       navigator.geolocation.getCurrentPosition(saveLocation);
-//     }
-//     else { 
-//       showPosition()
-//     }
-//   }
-  
-//   function saveLocation(position){
-//       localStorage.setItem("geolat", position.coords.latitude);
-//       localStorage.setItem("geolong", position.coords.longitude);
-  
-//       showPosition()
-//   }
-  
-//   function showPosition() {
-//       let data;
-      
-//       const proxyurl = "https://cors-anywhere.herokuapp.com/";
-      
-//       const url = "https://api.openweathermap.org/data/2.5/weather?lat="+ localStorage.getItem("geolat")+ "&lon="+ localStorage.getItem("geolong") +"&APPID=48ca062f46278186f5a0ed41287c1093"; // site that doesn’t send Access-Control-*
-//       fetch(proxyurl + url)
-//       .then(response => response.text())
-//       .then(contents => {
-//           // console.log(contents)
-//           data = contents
-//           obj = JSON.parse(contents)
-//           // console.log(obj.coord)
-//           // console.log(obj.weather[0].main)
-//           // console.log(obj.main.temp_min)
-//           adjustWebData()
-          
-//   })
-//   .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
-//   }
-
-//   function getLocation() {
-//   if (navigator.geolocation && localStorage.getItem("geolat") == null) {
-//     navigator.geolocation.getCurrentPosition(saveLocation);
-//   }
-//   else { 
-//     showPosition()
-//   }
-// }
-
-// function saveLocation(position){
-//     localStorage.setItem("geolat", position.coords.latitude);
-//     localStorage.setItem("geolong", position.coords.longitude);
-
-//     showPosition()
-// }
-
-// function showPosition() {
-//     let data;
-    
-//     const proxyurl = "https://cors-anywhere.herokuapp.com/";
-    
-//     const url = "https://api.openweathermap.org/data/2.5/weather?lat="+ localStorage.getItem("geolat")+ "&lon="+ localStorage.getItem("geolong") +"&APPID=48ca062f46278186f5a0ed41287c1093"; // site that doesn’t send Access-Control-*
-//     fetch(proxyurl + url)
-//     .then(response => response.text())
-//     .then(contents => {
-//         // console.log(contents)
-//         data = contents
-//         obj = JSON.parse(contents)
-//         // console.log(obj.coord)
-//         // console.log(obj.weather[0].main)
-//         // console.log(obj.main.temp_min)
-//         adjustWebData()
-        
-// })
-// .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
-// }
-
-// getLocation()
-
-
-
 let height = $(window).height();
 let width = $(window).width();
-// getQuote("https://quotes.rest/quote/random.json?language=en&limit=1");
-
-// getQuote("https://favqs.com/api/qotd");
-
-// let imgURL = "url(" + "https://picsum.photos/"+ width + "/" + height + ")"
-// document.body.style.backgroundImage = imgURL;
 
 if(localStorage.getItem("user") != null && localStorage.getItem("user") != ""){
     $("#welcome_message").append(", " + localStorage.getItem("user"));
@@ -227,16 +136,5 @@ $('#clock').hover(
     function(){ $(this).addClass('animate__animated animate__heartBeat') },
     function(){ $(this).removeClass('animate__animated animate__heartBeat') }
 )
-
-
-var oembed_url = 'https://backend.deviantart.com/oembed?url=http://www.deviantart.com/art/';
-
-  $.ajax({
-    url: oembed_url,
-    method: "GET",
-    dataType: "json"
-    }).done(function(data){    
-        console.log(data);
-});
 
 imageSearch();
