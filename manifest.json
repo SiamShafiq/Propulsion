@@ -1,37 +1,26 @@
 {
     "name": "Propulsion",
-    "version": "1.0.0",
-    "description": "Motivational Theme!",
-    "permissions": ["storage",
-        "tabs",
-        "notifications",
-        "http://*/",
-        "https://*/"
-    ],
-    "chrome_url_overrides":{
-        "newtab":"newpage.html"
+    "version": "1.0.1",
+    "description": "A motivational new tab page.",
+    "chrome_url_overrides": {
+        "newtab": "newpage.html"
     },
-
-    "icons": 
-        {
-            "16": "images/propulsion_16.png",
-            "48": "images/propulsion_48.png",
-            "128": "images/propulsion_128.png"
-
-        },
-    "browser_action":{
-        "default_icon":"images/propulsion_128.png",
-        "default_popup":"popup.html"
+    "icons": {
+        "16": "images/32x32.png",
+        "48": "images/48x48.png",
+        "128": "images/128x128.png"
     },
-
+    "browser_action": {
+        "default_icon": "images/128x128.png",
+        "default_popup": "popup.html"
+    },
     "background": {
-        "scripts": ["popup.js"],
-        "persistent": false
-      },
+        "service_worker":"popup.js"
+    },
+    "content_security_policy": {
+        "default-src" : "self",
+        "object-src" : "self"
+    },
 
-      "content_security_policy": "script-src 'self' https://backend.deviantart.com; object-src 'self'",
-      
-
-
-    "manifest_version": 2
-  }
+    "manifest_version": 3
+}

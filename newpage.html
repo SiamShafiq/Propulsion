@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./animate.min.css"/>
-    <link rel="stylesheet" href="styles.css">
-    <title>New Home Page</title>
-</head>
-<body>
-    <div class = "bg animate__animated animate__fadeIn"></div>
-        <div id = "quoteBox">
-            <div id = "quote">
-                <h1 id = "clock"></h1>
-                <h2 id = "welcome_message"></h2>
-                <h2 id = "qotd" class="animate__animated animate__fadeInLeft"></h1>
-                <h2 id = "author"></h2>
-            </div>
-        </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Personalize your experience.</p>
-                <span class= "labels">Name:</span> <input type="text" id="fname" name="fname">
-                <br>
-                <span class= "labels">Your Favorite Color:</span>
-                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-            </div>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./animate.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>New Tab Page</title>
+</head>
+
+<body>
+    <div class="bg animate__animated animate__fadeIn"></div>
+    <div id="quoteBox" class="avoid-clicks">
+        <div id="quote">
+            <h1 id="clock"></h1>
+            <h2 id="welcome_message" class="block"></h2>
+            <h2 id="qotd" class="animate__animated animate__fadeInLeft"></h2>
+                <h2 id="author"></h2>
         </div>
-        
-        <button id = "myBtn"></button>
-        <div>
     </div>
-    
+
+    <p id="explanation">This is an explanation of a galaxy.</p>
+
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">
+                <button class="button is-success">
+                    <span class="icon is-small">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span>Save</span>
+                </button>
+            </span>
+            <p>Personalize your experience.</p>
+            <input class="input is-medium block" type="text" placeholder="Name" id="fname" name="fname">
+            <br>
+            <span class="labels">Your Favorite Color:</span>
+            <input class="input is-medium block" type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <br>
+            <span class="labels">Interests:</span> <input class="input is-medium"
+                placeholder="Enter your interests here." type="text" id="interests" name="interests">
+            <br>
+        </div>
+    </div>
+
+    <span><button id="myBtn" class="settingsButton"><span><i class="fa-duotone fa-gears"></i></span>
+    </button></span>
+
+    <template>
+        <div class="chip interestchips">
+            <span></span>
+            <span class="closebtn">&times;</span>
+        </div>
+    </template>
+
+    <div id="text"></div>
+
 </body>
 
-    <script src="./jquery.min.js"></script>
-    <script type="module" src="backgroundScript.js"></script>
+<script src="./Chart.min.js"></script>
+<script src="./jquery.min.js"></script>
+<script type="module" src="backgroundScript.js"></script>
+
 </html>

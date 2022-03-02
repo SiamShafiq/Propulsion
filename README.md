@@ -7,7 +7,7 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 
 ![screenshotPropulsion](https://user-images.githubusercontent.com/10060614/108626904-71eeca80-7407-11eb-8984-09a92550892e.PNG)
 
-### Current Features:
+### Current Features:F
 
 - Dynamic backgrounds
 - Time of day
@@ -32,4 +32,4 @@ Revamp your new-tab page with this chrome extension that features a beautiful ba
 6. You have now successfully install Propulsion!
 7. Once installed, you can personalize the app with the settings button in the bottom right corner of the new-tab page.
 
-### This is a submission for the SFU StormHacks Hackathon hosted on 20th/21st February 2021.
+### This is a submission for the SFU Surge Hackathon hosted on 20th February 2021.
